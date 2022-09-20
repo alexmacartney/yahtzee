@@ -1,7 +1,9 @@
 var result = 0;
 var score = 0;
+var upperhalfsum = 0;
 
-function upperhalf(output, value) {
+/*
+function upperhalfscore(output, value) {
     if (output.innerHTML == 0) {
         score = 0;
         for (let j = 1; j < 6; j++) {
@@ -12,13 +14,24 @@ function upperhalf(output, value) {
         }
         output.innerHTML = score;
 
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
+
         nextround();
     }
 }
+*/
 
 var button = document.getElementById('onesbutton');
 
-button.onclick = upperhalf(ones, 1)
+/*
+button.onclick = upperhalfscore(ones, 1);
+*/
 
 button.onclick = function() {
     if (ones.innerHTML == 0) {
@@ -30,6 +43,14 @@ button.onclick = function() {
             }
         }
         ones.innerHTML = score;
+
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
 
         nextround();
     }
@@ -48,6 +69,14 @@ button.onclick = function() {
         }
         twos.innerHTML = score;
 
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
+
         nextround();
     }
 };
@@ -64,6 +93,14 @@ button.onclick = function() {
             }
         }
         threes.innerHTML = score;
+
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
 
         nextround();
     }
@@ -82,6 +119,14 @@ button.onclick = function() {
         }
         fours.innerHTML = score;
 
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
+
         nextround();
     }
 };
@@ -98,6 +143,14 @@ button.onclick = function() {
             }
         }
         fives.innerHTML = score;
+
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
 
         nextround();
     }
@@ -116,7 +169,14 @@ button.onclick = function() {
         }
         sixes.innerHTML = score;
 
+        upperhalfsum = Number(ones.innerHTML) + Number(twos.innerHTML) + Number(threes.innerHTML) + Number(fours.innerHTML) + Number(fives.innerHTML) + Number(sixes.innerHTML);
+        upperhalf.innerHTML = upperhalfsum;
+
+        if (upperhalfsum >= 63) {
+            bonus.innerHTML = 35;
+            totalupperhalf.innerHTML = upperhalfsum + 35;
+        }
+
         nextround();
     }
 };
-
