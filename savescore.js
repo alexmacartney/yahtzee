@@ -11,9 +11,9 @@ function upperhalf(output, value) {
             }
         }
         output.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 }
 
 var button = document.getElementById('onesbutton');
@@ -30,9 +30,9 @@ button.onclick = function() {
             }
         }
         ones.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
 var button = document.getElementById('twosbutton');
@@ -47,9 +47,9 @@ button.onclick = function() {
             }
         }
         twos.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
 var button = document.getElementById('threesbutton');
@@ -64,9 +64,9 @@ button.onclick = function() {
             }
         }
         threes.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
 var button = document.getElementById('foursbutton');
@@ -81,9 +81,9 @@ button.onclick = function() {
             }
         }
         fours.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
 var button = document.getElementById('fivesbutton');
@@ -98,9 +98,9 @@ button.onclick = function() {
             }
         }
         fives.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
 var button = document.getElementById('sixesbutton');
@@ -115,8 +115,8 @@ button.onclick = function() {
             }
         }
         sixes.innerHTML = score;
-    }
 
-    nextround();
+        nextround();
+    }
 };
 
