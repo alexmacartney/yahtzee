@@ -2,9 +2,9 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.dice {
-    height: 100px;
-    width: 100px;
+div.dice {
+    height: 98px;
+    width: 98px;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 80px;
@@ -12,14 +12,19 @@
     float: left;
 }
 
-.clear {
+div.clear {
     clear: both;
 }
 
-.checkbox {
-    width: 102px;
-    height: 20px;
+div.noroll {
+    width: 100px;
+    height: 40px;
     float: left;
+}
+
+input.noroll {
+    width: 36px;
+    height: 34px;
 }
 
 button {
@@ -33,9 +38,9 @@ button {
     float: left;
 }
 
-.rollsleft {
-    height: 40px;
-    width: 40px;
+div.rollsleft {
+    height: 38px;
+    width: 38px;
     border: 1px solid black;
     border-radius: 4px;
     font-size: 36px;
