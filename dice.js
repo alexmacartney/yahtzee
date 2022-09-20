@@ -18,7 +18,7 @@ var rollsmade = 0
 button.onclick = function() {
     if (rollsleft.innerHTML >= 1) {
         for (let j = 1; j < 6; j++) {
-            var checkbox = document.getElementById('dicecheck' + String(j)).checked
+            var checkbox = document.getElementById('dicecheck' + String(j)).checked;
             if (!checkbox) {
                 var result = dice.roll();
                 printNumber(result, j);

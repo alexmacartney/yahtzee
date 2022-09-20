@@ -38,9 +38,44 @@ button {
     float: left;
 }
 
+button.blue {
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    margin: 1px;
+    float: left;
+}
+
+button.red {
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    margin: 1px;
+    float: left;
+}
+
 div.rollsleft {
     height: 38px;
     width: 38px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 36px;
+    text-align: center;
+    float: left;
+}
+
+div.score {
+    height: 38px;
+    width: 78px;
     border: 1px solid black;
     border-radius: 4px;
     font-size: 36px;
