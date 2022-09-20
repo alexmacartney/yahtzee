@@ -16,14 +16,16 @@ var button = document.getElementById('rolldice');
 var rollsmade = 0
 
 button.onclick = function() {
-    for (let j = 1; j < 6; j++) {
-        var checkbox = document.getElementById('dicecheck' + String(j)).checked
-        if (!checkbox) {
-            var result = dice.roll();
-            printNumber(result, j);
+    if (rollsleft.innerHTML >= 1) {
+        for (let j = 1; j < 6; j++) {
+            var checkbox = document.getElementById('dicecheck' + String(j)).checked
+            if (!checkbox) {
+                var result = dice.roll();
+                printNumber(result, j);
+            }
         }
-    }
 
-    rollsmade++;
-    rollsleft.innerHTML = 3 - rollsmade;
+        rollsmade++;
+        rollsleft.innerHTML = 3 - rollsmade;
+    }
 };
