@@ -82,3 +82,17 @@ div.score {
     text-align: center;
     float: left;
 }
+
+subtotal {
+    height: 38px;
+    width: 198px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    margin: 1px;
+    float: left;
+    line-height: 38px;
+}
