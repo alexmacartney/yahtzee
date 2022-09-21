@@ -178,6 +178,8 @@ button.onclick = function() {
         }
         if (xAreEqual(diceScores, 3)) {
             threeOfAKind.innerHTML = score;
+        } else {
+            threeOfAKind.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
@@ -201,6 +203,8 @@ button.onclick = function() {
         }
         if (xAreEqual(diceScores, 4)) {
             fourOfAKind.innerHTML = score;
+        } else {
+            fourOfAKind.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
@@ -223,6 +227,8 @@ button.onclick = function() {
         }
         if (fullHouseChecker(diceScores)) {
             fullHouse.innerHTML = 25;
+        } else {
+            fullHouse.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
@@ -245,6 +251,8 @@ button.onclick = function() {
         }
         if (straightChecker(diceScores, 4)) {
             lowStraight.innerHTML = 30;
+        } else {
+            lowStraight.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
@@ -267,6 +275,8 @@ button.onclick = function() {
         }
         if (straightChecker(diceScores, 5)) {
             highStraight.innerHTML = 40;
+        } else {
+            highStraight.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
@@ -290,6 +300,8 @@ button.onclick = function() {
         }
         if (xAreEqual(diceScores, 5)) {
             yahtzee.innerHTML = score;
+        } else {
+            yahtzee.innerHTML = 0;
         }
 
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
