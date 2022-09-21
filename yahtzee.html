@@ -9,7 +9,10 @@
 
 <body>
 
-    <script src = 'nextround.js'></script>
+    <script src = 'next_round.js'></script>
+    <script src = 'x_are_equal.js'></script>
+    <script src = 'full_house_checker.js'></script>
+    <script src = 'straight_checker.js'></script>
     
     <div class = 'dice' id = 'dice1'>0</div>
     <div class = 'dice' id = 'dice2'>0</div>
@@ -19,66 +22,101 @@
 
     <div class = 'clear'></div>
 
-    <div class = 'noroll'><input class = 'noroll' type = 'checkbox' id = 'dicecheck1' value = 'dicecheck1'></div>
-    <div class = 'noroll'><input class = 'noroll' type = 'checkbox' id = 'dicecheck2' value = 'dicecheck2'></div>
-    <div class = 'noroll'><input class = 'noroll' type = 'checkbox' id = 'dicecheck3' value = 'dicecheck3'></div>
-    <div class = 'noroll'><input class = 'noroll' type = 'checkbox' id = 'dicecheck4' value = 'dicecheck4'></div>
-    <div class = 'noroll'><input class = 'noroll' type = 'checkbox' id = 'dicecheck5' value = 'dicecheck5'></div>
+    <div class = 'noRoll'><input class = 'noRoll' type = 'checkbox' id = 'diceCheck1' value = 'diceCheck1'></div>
+    <div class = 'noRoll'><input class = 'noRoll' type = 'checkbox' id = 'diceCheck2' value = 'diceCheck2'></div>
+    <div class = 'noRoll'><input class = 'noRoll' type = 'checkbox' id = 'diceCheck3' value = 'diceCheck3'></div>
+    <div class = 'noRoll'><input class = 'noRoll' type = 'checkbox' id = 'diceCheck4' value = 'diceCheck4'></div>
+    <div class = 'noRoll'><input class = 'noRoll' type = 'checkbox' id = 'diceCheck5' value = 'diceCheck5'></div>
 
     <div class = 'clear'></div>
 
-    <button class = 'blue' id = 'rolldice'>ROLL DICE</button>
+    <button class = 'blue' id = 'rollDice'>ROLL DICE</button>
     <script src = 'dice.js'></script>
     
-    <div class = 'rollsleft' id = 'rollsleft'>3</div>
+    <div class = 'rollsLeft' id = 'rollsLeft'>3</div>
 
     <div class = 'clear'></div>
 
-    <button id = 'onesbutton'>ONES</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'onesButton'>ONES</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'ones'>0</div>
 
+    <button id = 'threeOfAKindButton'>3 OF A KIND</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'threeOfAKind'>0</div>
+
     <div class = 'clear'></div>
 
-    <button id = 'twosbutton'>TWOS</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'twosButton'>TWOS</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'twos'>0</div>
 
+    <button id = 'fourOfAKindButton'>4 OF A KIND</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'fourOfAKind'>0</div>
+
     <div class = 'clear'></div>
 
-    <button id = 'threesbutton'>THREES</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'threesButton'>THREES</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'threes'>0</div>
 
+    <button id = 'fullHouseButton'>FULL HOUSE</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'fullHouse'>0</div>
+
     <div class = 'clear'></div>
 
-    <button id = 'foursbutton'>FOURS</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'foursButton'>FOURS</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'fours'>0</div>
 
+    <button id = 'lowStraightButton'>LOW STRAIGHT</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'lowStraight'>0</div>
+
     <div class = 'clear'></div>
 
-    <button id = 'fivesbutton'>FIVES</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'fivesButton'>FIVES</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'fives'>0</div>
 
+    <button id = 'highStraightButton'>HIGH STRAIGHT</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'highStraight'>0</div>
+
     <div class = 'clear'></div>
 
-    <button id = 'sixesbutton'>SIXES</button>
-    <script src = 'savescore.js'></script>
+    <button id = 'sixesButton'>SIXES</button>
+    <script src = 'save_score.js'></script>
     
     <div class = 'score' id = 'sixes'>0</div>
+
+    <button id = 'yahtzeeButton'>YAHTZEE</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'yahtzee'>0</div>
 
     <div class = 'clear'></div>
 
     <subtotal>UPPER HALF</subtotal>
     
-    <div class = 'score' id = 'upperhalf'>0</div>
+    <div class = 'score' id = 'upperHalf'>0</div>
+
+    <button id = 'chanceButton'>CHANCE</button>
+    <script src = 'save_score.js'></script>
+    
+    <div class = 'score' id = 'chance'>0</div>
 
     <div class = 'clear'></div>
 
@@ -86,11 +124,19 @@
     
     <div class = 'score' id = 'bonus'>0</div>
 
+    <subtotal>LOWER HALF</subtotal>
+    
+    <div class = 'score' id = 'lowerHalf'>0</div>
+
     <div class = 'clear'></div>
 
     <subtotal>TOTAL UPPER HALF</subtotal>
     
-    <div class = 'score' id = 'totalupperhalf'>0</div>
+    <div class = 'score' id = 'totalUpperHalf'>0</div>
+
+    <subtotal>GRAND TOTAL</subtotal>
+    
+    <div class = 'score' id = 'grandTotal'>0</div>
 
     <div class = 'clear'></div>
 

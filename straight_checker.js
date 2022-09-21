@@ -1,0 +1,1 @@
+function straightChecker(array, x) {}

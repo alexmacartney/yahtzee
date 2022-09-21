@@ -16,13 +16,13 @@ div.clear {
     clear: both;
 }
 
-div.noroll {
+div.noRoll {
     width: 100px;
     height: 40px;
     float: left;
 }
 
-input.noroll {
+input.noRoll {
     width: 36px;
     height: 34px;
 }
@@ -51,19 +51,7 @@ button.blue {
     float: left;
 }
 
-button.red {
-    height: 40px;
-    width: 200px;
-    border: 1px solid black;
-    background-color: red;
-    border-radius: 4px;
-    font-size: 18px;
-    text-align: center;
-    margin: 1px;
-    float: left;
-}
-
-div.rollsleft {
+div.rollsLeft {
     height: 38px;
     width: 38px;
     border: 1px solid black;
@@ -71,6 +59,8 @@ div.rollsleft {
     font-size: 36px;
     text-align: center;
     float: left;
+    position: relative;
+    top: 1px;
 }
 
 div.score {
@@ -81,6 +71,8 @@ div.score {
     font-size: 36px;
     text-align: center;
     float: left;
+    position: relative;
+    top: 1px;
 }
 
 subtotal {

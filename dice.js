@@ -11,21 +11,21 @@ function printNumber(number, i) {
     dice.innerHTML = number;
 }
 
-var button = document.getElementById('rolldice');
+var button = document.getElementById('rollDice');
 
-var rollsmade = 0
+var rollsMade = 0
 
 button.onclick = function() {
-    if (rollsleft.innerHTML >= 1) {
+    if (rollsLeft.innerHTML >= 1) {
         for (let j = 1; j < 6; j++) {
-            var checkbox = document.getElementById('dicecheck' + String(j)).checked;
+            var checkbox = document.getElementById('diceCheck' + String(j)).checked;
             if (!checkbox) {
                 var result = dice.roll();
                 printNumber(result, j);
             }
         }
 
-        rollsmade++;
-        rollsleft.innerHTML = 3 - rollsmade;
+        rollsMade++;
+        rollsLeft.innerHTML = 3 - rollsMade;
     }
 };
