@@ -1,5 +1,5 @@
 function upperHalfScore(output, value) {
-    if (output.innerHTML == 0) {
+    if (!output.innerHTML) {
         var score = 0;
         for (let j = 1; j < 6; j++) {
             var diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);

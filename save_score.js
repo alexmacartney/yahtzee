@@ -7,7 +7,7 @@ var lowerHalfSum = 0;
 var button = document.getElementById('onesButton');
 
 button.onclick = function() {
-    if (ones.innerHTML == 0) {
+    if (!ones.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -34,7 +34,7 @@ button.onclick = function() {
 var button = document.getElementById('twosButton');
 
 button.onclick = function() {
-    if (twos.innerHTML == 0) {
+    if (!twos.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -61,7 +61,7 @@ button.onclick = function() {
 var button = document.getElementById('threesButton');
 
 button.onclick = function() {
-    if (threes.innerHTML == 0) {
+    if (!threes.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -88,7 +88,7 @@ button.onclick = function() {
 var button = document.getElementById('foursButton');
 
 button.onclick = function() {
-    if (fours.innerHTML == 0) {
+    if (!fours.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -115,7 +115,7 @@ button.onclick = function() {
 var button = document.getElementById('fivesButton');
 
 button.onclick = function() {
-    if (fives.innerHTML == 0) {
+    if (!fives.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -142,7 +142,7 @@ button.onclick = function() {
 var button = document.getElementById('sixesButton');
 
 button.onclick = function() {
-    if (sixes.innerHTML == 0) {
+    if (!sixes.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             diceScore = Number(document.getElementById('dice' + String(j)).innerHTML);
@@ -169,7 +169,7 @@ button.onclick = function() {
 var button = document.getElementById('threeOfAKindButton');
 
 button.onclick = function() {
-    if (threeOfAKind.innerHTML == 0) {
+    if (!threeOfAKind.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -192,7 +192,7 @@ button.onclick = function() {
 var button = document.getElementById('fourOfAKindButton');
 
 button.onclick = function() {
-    if (fourOfAKind.innerHTML == 0) {
+    if (!fourOfAKind.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -215,7 +215,7 @@ button.onclick = function() {
 var button = document.getElementById('fullHouseButton');
 
 button.onclick = function() {
-    if (fullHouse.innerHTML == 0) {
+    if (!fullHouse.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -237,7 +237,7 @@ button.onclick = function() {
 var button = document.getElementById('lowStraightButton');
 
 button.onclick = function() {
-    if (lowStraight.innerHTML == 0) {
+    if (!lowStraight.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -259,7 +259,7 @@ button.onclick = function() {
 var button = document.getElementById('highStraightButton');
 
 button.onclick = function() {
-    if (highStraight.innerHTML == 0) {
+    if (!highStraight.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -281,7 +281,7 @@ button.onclick = function() {
 var button = document.getElementById('yahtzeeButton');
 
 button.onclick = function() {
-    if (yahtzee.innerHTML == 0) {
+    if (!yahtzee.innerHTML) {
         score = 0;
         diceScores = [];
         for (let j = 1; j < 6; j++) {
@@ -304,7 +304,7 @@ button.onclick = function() {
 var button = document.getElementById('chanceButton');
 
 button.onclick = function() {
-    if (chance.innerHTML == 0) {
+    if (!chance.innerHTML) {
         score = 0;
         for (let j = 1; j < 6; j++) {
             score += Number(document.getElementById('dice' + String(j)).innerHTML);
