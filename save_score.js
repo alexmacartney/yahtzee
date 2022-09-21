@@ -299,7 +299,7 @@ button.onclick = function() {
             diceScores.push(Number(document.getElementById('dice' + String(j)).innerHTML));
         }
         if (xAreEqual(diceScores, 5)) {
-            yahtzee.innerHTML = score;
+            yahtzee.innerHTML = 50;
         } else {
             yahtzee.innerHTML = 0;
         }
