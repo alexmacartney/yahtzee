@@ -17,7 +17,7 @@ function upperHalfScore(output, value) {
             totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = upperHalfSum + lowerHalfSum;
+        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
 
         nextRound();
     }
