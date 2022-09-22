@@ -14,10 +14,11 @@ function upperHalfScore(output, value) {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }

@@ -22,10 +22,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -49,10 +50,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -76,10 +78,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -103,10 +106,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -130,10 +134,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -157,10 +162,11 @@ button.onclick = function() {
 
         if (upperHalfSum >= 63) {
             bonus.innerHTML = 35;
-            totalUpperHalf.innerHTML = upperHalfSum + 35;
         }
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -185,7 +191,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -210,7 +216,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -234,7 +240,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -258,7 +264,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -282,7 +288,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -307,7 +313,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
@@ -326,7 +332,7 @@ button.onclick = function() {
         lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
         lowerHalf.innerHTML = lowerHalfSum;
 
-        grandTotal.innerHTML = totalUpperHalf.innerHTML + lowerHalf.innerHTML;
+        grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
         nextRound();
     }
