@@ -10,7 +10,7 @@ const createWindow = () => {
         preload: path.join(__dirname, 'preload.js'),
       },
   });
-  ipcMain.handle('ping', () => 'pong');
+  //ipcMain.handle('ping', () => 'pong');
   win.loadFile('yahtzee.html');
 }
 
