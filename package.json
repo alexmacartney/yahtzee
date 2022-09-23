@@ -36,7 +36,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "assets/Alex.ico"
+        "icon": "assets/Alex.icns"
       },
       "makers": [
         {
