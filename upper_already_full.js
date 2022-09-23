@@ -1,29 +1,29 @@
 function upperAlreadyFull(x) {
-	if (x = 1) {
+	if (x == 1) {
 		if (ones.innerHTML) {
 			return true;
 		} else {
 			return false;
 		}
-	} else if (x = 2) {
+	} else if (x == 2) {
 		if (twos.innerHTML) {
 			return true;
 		} else {
 			return false;
 		}
-	} else if (x = 3) {
+	} else if (x == 3) {
 		if (threes.innerHTML) {
 			return true;
 		} else {
 			return false;
 		}
-	} else if (x = 4) {
+	} else if (x == 4) {
 		if (fours.innerHTML) {
 			return true;
 		} else {
 			return false;
 		}
-	} else if (x = 5) {
+	} else if (x == 5) {
 		if (fives.innerHTML) {
 			return true;
 		} else {
