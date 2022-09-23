@@ -1,11 +1,11 @@
 {
-  "name": "y",
+  "name": "yahtzee",
   "version": "1.0.0",
   "description": "Alex's first attempt at Yahtzee!",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
@@ -35,19 +35,24 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "assets/Alex.icns"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "y"
+            "name": "yahtzee"
           }
         },
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
             "darwin"
-          ]
+          ],
+          "config": {
+            "name": "yahtzee"
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
