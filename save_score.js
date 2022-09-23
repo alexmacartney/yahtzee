@@ -24,11 +24,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 5 && yahtzee.innerHTML) {
+        if (score == 5 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -56,11 +59,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 10 && yahtzee.innerHTML) {
+        if (score == 10 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -88,11 +94,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 15 && yahtzee.innerHTML) {
+        if (score == 15 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -120,11 +129,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 20 && yahtzee.innerHTML) {
+        if (score == 20 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -152,11 +164,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 25 && yahtzee.innerHTML) {
+        if (score == 25 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -184,11 +199,14 @@ button.onclick = function() {
             bonus.innerHTML = 35;
         }
 
-        if (score == 30 && yahtzee.innerHTML) {
+        if (score == 30 && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
         totalUpperHalf.innerHTML = upperHalfSum + Number(bonus.innerHTML);
+
+        lowerHalfSum = Number(threeOfAKind.innerHTML) + Number(fourOfAKind.innerHTML) + Number(fullHouse.innerHTML) + Number(lowStraight.innerHTML) + Number(highStraight.innerHTML) + Number(yahtzee.innerHTML) + Number(chance.innerHTML);
+        lowerHalf.innerHTML = lowerHalfSum;
 
         grandTotal.innerHTML = Number(totalUpperHalf.innerHTML) + Number(lowerHalf.innerHTML);
 
@@ -206,15 +224,13 @@ button.onclick = function() {
             score += Number(document.getElementById('dice' + String(j)).innerHTML);
             diceScores.push(Number(document.getElementById('dice' + String(j)).innerHTML));
         }
-        if (xAreEqual(diceScores, 5) && upperAlreadyFull(diceScores[0])) {
-            threeOfAKind.innerHTML = 30;
-        } else if (xAreEqual(diceScores, 3)) {
+        if (xAreEqual(diceScores, 3)) {
             threeOfAKind.innerHTML = score;
         } else {
             threeOfAKind.innerHTML = 0;
         }
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
@@ -237,15 +253,13 @@ button.onclick = function() {
             score += Number(document.getElementById('dice' + String(j)).innerHTML);
             diceScores.push(Number(document.getElementById('dice' + String(j)).innerHTML));
         }
-        if (xAreEqual(diceScores, 5) && upperAlreadyFull(diceScores[0])) {
-            fourOfAKind.innerHTML = 30;
-        } else if (xAreEqual(diceScores, 4)) {
+        if (xAreEqual(diceScores, 4)) {
             fourOfAKind.innerHTML = score;
         } else {
             fourOfAKind.innerHTML = 0;
         }
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
@@ -267,15 +281,13 @@ button.onclick = function() {
         for (let j = 1; j < 6; j++) {
             diceScores.push(Number(document.getElementById('dice' + String(j)).innerHTML));
         }
-        if (xAreEqual(diceScores, 5) && upperAlreadyFull(diceScores[0])) {
-            fullHouse.innerHTML = 25;
-        } else if (fullHouseChecker(diceScores)) {
+        if (fullHouseChecker(diceScores)) {
             fullHouse.innerHTML = 25;
         } else {
             fullHouse.innerHTML = 0;
         }
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
@@ -305,7 +317,7 @@ button.onclick = function() {
             lowStraight.innerHTML = 0;
         }
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
@@ -335,7 +347,7 @@ button.onclick = function() {
             highStraight.innerHTML = 0;
         }
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
@@ -383,11 +395,9 @@ button.onclick = function() {
             score += Number(document.getElementById('dice' + String(j)).innerHTML);
             diceScores.push(Number(document.getElementById('dice' + String(j)).innerHTML));
         }
-        if (xAreEqual(diceScores, 5) && upperAlreadyFull(diceScores[0])) {
-            chance.innerHTML = 30;
-        } else chance.innerHTML = score;
+        chance.innerHTML = score;
 
-        if (xAreEqual(diceScores, 5) && yahtzee.innerHTML) {
+        if (xAreEqual(diceScores, 5) && Number(yahtzee.innerHTML) == 50) {
             yahtzee.innerHTML = Number(yahtzee.innerHTML) + 100;
         }
 
