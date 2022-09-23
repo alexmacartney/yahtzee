@@ -3,6 +3,6 @@ function nextRound() {
         document.getElementById('diceCheck' + String(j)).checked = 0;
         document.getElementById('dice' + String(j)).innerHTML = '';
     }
-    rollsMade = 0
-    rollsLeft.innerHTML = 3
+    rollsMade = 0;
+    rollsLeft.innerHTML = 3;
 }
