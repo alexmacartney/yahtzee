@@ -1,105 +1,106 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
+font-family: helvetica;
 }
 
-div.dice {
-    height: 98px;
-    width: 98px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 80px;
-    text-align: center;
-    float: left;
+.dice {
+  height: 98px;
+  width: 98px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 80px;
+  text-align: center;
+  float: left;
 }
 
-div.clear {
-    clear: both;
+.clear {
+  clear: both;
 }
 
-div.noRoll {
-    width: 100px;
-    height: 40px;
-    float: left;
+.noRoll {
+  width: 100px;
+  height: 40px;
+  float: left;
 }
 
 input.noRoll {
-    width: 36px;
-    height: 34px;
+  width: 36px;
+  height: 34px;
 }
 
-button {
-    height: 40px;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 18px;
-    text-align: center;
-    margin: 1px;
-    float: left;
+.button_yahtzee {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  float: left;
 }
 
-button.blue {
-    height: 40px;
-    width: 200px;
-    border: 1px solid black;
-    background-color: blue;
-    color: white;
-    border-radius: 4px;
-    font-size: 18px;
-    text-align: center;
-    margin: 1px;
-    float: left;
+.button_yahtzee.blue {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  float: left;
 }
 
-button.blue_offset {
-    height: 40px;
-    width: 200px;
-    border: 1px solid black;
-    background-color: blue;
-    color: white;
-    border-radius: 4px;
-    font-size: 18px;
-    text-align: center;
-    margin: 1px;
-    float: left;
-    position: relative;
-    left: 120px;
+.button_yahtzee.blue_offset {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  float: left;
+  position: relative;
+  left: 120px;
 }
 
-div.rollsLeft {
-    height: 38px;
-    width: 38px;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 36px;
-    text-align: center;
-    float: left;
-    position: relative;
-    top: 1px;
+.rollsLeft {
+  height: 38px;
+  width: 38px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 36px;
+  text-align: center;
+  float: left;
+  position: relative;
+  top: 1px;
 }
 
-div.score {
-    height: 38px;
-    width: 78px;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 36px;
-    text-align: center;
-    float: left;
-    position: relative;
-    top: 1px;
+.score {
+  height: 38px;
+  width: 78px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 36px;
+  text-align: center;
+  float: left;
+  position: relative;
+  top: 1px;
 }
 
-subtotal {
-    height: 38px;
-    width: 198px;
-    border: 1px solid black;
-    background-color: red;
-    color: white;
-    border-radius: 4px;
-    font-size: 18px;
-    text-align: center;
-    margin: 1px;
-    float: left;
-    line-height: 38px;
+.subtotal {
+  height: 38px;
+  width: 198px;
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  float: left;
+  position: relative;
+  line-height: 38px;
 }
