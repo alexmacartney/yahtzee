@@ -2,18 +2,23 @@
 
 <head>
 
-    <title>YAHTZEE</title>
-    <link rel = 'stylesheet' href = 'style.css'>
+  <meta charset = 'UTF-8'>
+  <meta http-equiv = 'X-UA-Compatible' content = 'IE = edge'>
+  <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+  <title>YAHTZEE</title>
+  <link rel = 'stylesheet' href = 'style.css'>
 
 </head>
 
-<body>
+<body class = 'light-theme'>
 
-    <script src = 'next_round.js'></script>
-    <script src = 'x_are_equal.js'></script>
-    <script src = 'full_house_checker.js'></script>
-    <script src = 'straight_checker.js'></script>
-    <script src = 'upper_already_full.js'></script>
+  <script src = 'next_round.js'></script>
+  <script src = 'x_are_equal.js'></script>
+  <script src = 'full_house_checker.js'></script>
+  <script src = 'straight_checker.js'></script>
+  <script src = 'upper_already_full.js'></script>
+
+  <div class = 'flex-container'>
 
     <div class = 'dice' id = 'dice1'></div>
     <div class = 'dice' id = 'dice2'></div>
@@ -36,7 +41,7 @@
     
     <div class = 'rollsLeft' id = 'rollsLeft'>3</div>
 
-    <button class = 'button_yahtzee blue_offset' id = 'resetGame'>RESET GAME</button>
+    <button class = 'button_yahtzee blue' id = 'resetGame'>RESET GAME</button>
     <script src = 'reset_game.js'></script>
 
     <div class = 'clear'></div>
@@ -142,9 +147,9 @@
     
     <div class = 'score' id = 'grandTotal'>0</div>
 
-    <div class = 'clear'></div>
-
     <p id = "info"></p>
+
+  </div>
 
 </body>
 
