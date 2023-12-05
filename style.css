@@ -2,105 +2,86 @@
 font-family: helvetica;
 }
 
+.flex-container {
+height: 98vw;
+width: 98vw;
+max-height: 540px;
+max-width: 800px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
 .dice {
-  height: 98px;
-  width: 98px;
-  border: 1px solid black;
-  border-radius: 10px;
-  font-size: 80px;
-  text-align: center;
-  float: left;
+height: calc(20% - 10px);
+width: calc(20% - 10px);
+border: 1px solid black;
+border-radius: 10px;
+font-size: clamp(48px, 16vw, 80px);
+text-align: center;
+float: left;
 }
 
 .clear {
-  clear: both;
+clear: both;
 }
 
 .noRoll {
-  width: 100px;
-  height: 40px;
-  float: left;
+height: 8%;
+width: 18%;
+float: left;
 }
 
 input.noRoll {
-  width: 36px;
-  height: 34px;
+height: 50%;
+width: 50%;
 }
 
 .button_yahtzee {
-  height: 40px;
-  width: 200px;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 18px;
-  text-align: center;
-  margin: 1px;
-  float: left;
-}
-
-.button_yahtzee.blue {
-  height: 40px;
-  width: 200px;
-  border: 1px solid black;
-  background-color: blue;
-  color: white;
-  border-radius: 4px;
-  font-size: 18px;
-  text-align: center;
-  margin: 1px;
-  float: left;
-}
-
-.button_yahtzee.blue_offset {
-  height: 40px;
-  width: 200px;
-  border: 1px solid black;
-  background-color: blue;
-  color: white;
-  border-radius: 4px;
-  font-size: 18px;
-  text-align: center;
-  margin: 1px;
-  float: left;
-  position: relative;
-  left: 120px;
-}
-
-.rollsLeft {
-  height: 38px;
-  width: 38px;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 36px;
-  text-align: center;
-  float: left;
-  position: relative;
-  top: 1px;
+height: 12%;
+width: calc(36% - 20px);
+border: 1px solid black;  
+text-align: center;
+font-size: clamp(12px, 4vw, 20px);
+margin: 1px;
 }
 
 .score {
-  height: 38px;
-  width: 78px;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 36px;
-  text-align: center;
-  float: left;
-  position: relative;
-  top: 1px;
+height: calc(12% - 2px);
+width: 14%;
+border: 1px solid black;
+border-radius: 4px;
+font-size: clamp(12px, 8vw, 40px);
+text-align: center;
+margin: 1px;
+}
+
+.button_yahtzee.blue {
+width: calc(44% - 20px);
+border: 1px solid black;
+background-color: blue;
+color: white;
+}
+
+.rollsLeft {
+height: calc(12% - 2px);
+width: 12%;
+border: 1px solid black;
+border-radius: 4px;
+font-size: clamp(12px, 8vw, 40px);
+text-align: center;
+margin: 2px;
+position: relative;
+top: -1px;
 }
 
 .subtotal {
-  height: 38px;
-  width: 198px;
-  border: 1px solid black;
-  background-color: red;
-  color: white;
-  border-radius: 4px;
-  font-size: 18px;
-  text-align: center;
-  margin: 1px;
-  float: left;
-  position: relative;
-  line-height: 38px;
+height: calc(12% - 2px);
+width: calc(36% - 22px);
+border: 1px solid black;
+background-color: red;
+color: white;
+text-align: center;
+font-size: clamp(12px, 4vw, 20px);
+margin: 1px;
 }
